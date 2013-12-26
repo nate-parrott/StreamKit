@@ -37,7 +37,7 @@ Let's construct an infinite generator that counts numbers from 0 to infinity:
         return @(i++);
     }];
 
-If we repeatedly call `[counter nextObject]`, we'll get 1, followed by 2, then 3, etc., forever.
+If we repeatedly call `[counter nextObject]`, we'll get 0, followed by 1, then 2, etc., forever.
 
 A function to make this kind of generator is part of StreamKit. It's called `SKEndless()`, and let's use it to find the first number that's divisible by 2 and 7:
 
