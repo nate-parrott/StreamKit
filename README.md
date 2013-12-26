@@ -48,7 +48,7 @@ A function to make this kind of generator is part of StreamKit. It's called `SKE
         }
     }
 
-What if we want to print out *all* the numbers divisible by 2 and 7 (or at least the first few thousand). We can make a generator that does it, by filtering that endless generator:
+What if we want to print out *all* the numbers divisible by 2 and 7 (or at least the first few thousand)? We can make a generator that does it, by filtering that endless generator:
 
     SKGenerator* coolNumbers = [SKEndless() mapFilter:^(id i) {
         if (i.intValue > 0 && i.intValue%2 == 0 && i.intValue%7 == 0) {
