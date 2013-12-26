@@ -11,3 +11,4 @@
 @class SKGenerator;
 
 SKGenerator* SKRange(NSUInteger start, NSUInteger end); // returns a generator from [start .. end-1], like the Python xrange() function
+SKGenerator* SKEndless(); // generates the integers from 0 to infinity

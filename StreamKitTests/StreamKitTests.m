@@ -79,6 +79,10 @@
 -(void)testSKRange {
     NSArray* range = @[@12, @13, @14];
     XCTAssertEqualObjects(range, [SKRange(12, 15) allObjects], @"");
+    
+    SKGenerator* endless = SKEndless();
+    XCTAssertEqualObjects([endless nextObject], @0, @"");
+    XCTAssertEqualObjects([endless nextObject], @1, @"");
 }
 
 -(void)testMapFilter {

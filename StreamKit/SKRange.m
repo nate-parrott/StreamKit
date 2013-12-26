@@ -14,3 +14,10 @@ SKGenerator* SKRange(NSUInteger start, NSUInteger end) {
         return i >= end? nil : @(i++);
     }];
 }
+
+SKGenerator* SKEndless() {
+    __block NSUInteger i = 0;
+    return [SKGenerator generatorWithBlock:^id(SKGenerator *generator) {
+        return @(i++);
+    }];
+}
