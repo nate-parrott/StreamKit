@@ -8,14 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5F05F326186BFC7F004C7CF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F05F325186BFC7F004C7CF7 /* Foundation.framework */; };
-		5F05F32B186BFC7F004C7CF7 /* StreamKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F05F32A186BFC7F004C7CF7 /* StreamKit.h */; };
-		5F05F32D186BFC7F004C7CF7 /* StreamKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F05F32C186BFC7F004C7CF7 /* StreamKit.m */; };
 		5F05F334186BFC7F004C7CF7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F05F333186BFC7F004C7CF7 /* XCTest.framework */; };
 		5F05F335186BFC7F004C7CF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F05F325186BFC7F004C7CF7 /* Foundation.framework */; };
 		5F05F337186BFC7F004C7CF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F05F336186BFC7F004C7CF7 /* UIKit.framework */; };
 		5F05F33A186BFC7F004C7CF7 /* libStreamKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F05F322186BFC7F004C7CF7 /* libStreamKit.a */; };
 		5F05F340186BFC7F004C7CF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F05F33E186BFC7F004C7CF7 /* InfoPlist.strings */; };
-		5F05F342186BFC7F004C7CF7 /* StreamKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F05F341186BFC7F004C7CF7 /* StreamKitTests.m */; };
+		5F05F351186BFC9A004C7CF7 /* NSObject+StreamKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F05F34C186BFC9A004C7CF7 /* NSObject+StreamKit.m */; };
+		5F05F352186BFC9A004C7CF7 /* SKGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F05F34E186BFC9A004C7CF7 /* SKGenerator.m */; };
+		5F05F353186BFC9A004C7CF7 /* SKRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F05F350186BFC9A004C7CF7 /* SKRange.m */; };
+		5F05F355186BFCB8004C7CF7 /* StreamKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F05F354186BFCB8004C7CF7 /* StreamKitTests.m */; };
+		5F05F357186BFCE9004C7CF7 /* NSObject+StreamKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F05F34C186BFC9A004C7CF7 /* NSObject+StreamKit.m */; };
+		5F05F358186BFCEB004C7CF7 /* SKGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F05F34E186BFC9A004C7CF7 /* SKGenerator.m */; };
+		5F05F359186BFCEE004C7CF7 /* SKRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F05F350186BFC9A004C7CF7 /* SKRange.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				5F05F32B186BFC7F004C7CF7 /* StreamKit.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +48,19 @@
 		5F05F322186BFC7F004C7CF7 /* libStreamKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStreamKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F05F325186BFC7F004C7CF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5F05F329186BFC7F004C7CF7 /* StreamKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StreamKit-Prefix.pch"; sourceTree = "<group>"; };
-		5F05F32A186BFC7F004C7CF7 /* StreamKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamKit.h; sourceTree = "<group>"; };
-		5F05F32C186BFC7F004C7CF7 /* StreamKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreamKit.m; sourceTree = "<group>"; };
 		5F05F332186BFC7F004C7CF7 /* StreamKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F05F333186BFC7F004C7CF7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5F05F336186BFC7F004C7CF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5F05F33D186BFC7F004C7CF7 /* StreamKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StreamKitTests-Info.plist"; sourceTree = "<group>"; };
 		5F05F33F186BFC7F004C7CF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5F05F341186BFC7F004C7CF7 /* StreamKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreamKitTests.m; sourceTree = "<group>"; };
+		5F05F34B186BFC9A004C7CF7 /* NSObject+StreamKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+StreamKit.h"; sourceTree = "<group>"; };
+		5F05F34C186BFC9A004C7CF7 /* NSObject+StreamKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+StreamKit.m"; sourceTree = "<group>"; };
+		5F05F34D186BFC9A004C7CF7 /* SKGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKGenerator.h; sourceTree = "<group>"; };
+		5F05F34E186BFC9A004C7CF7 /* SKGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKGenerator.m; sourceTree = "<group>"; };
+		5F05F34F186BFC9A004C7CF7 /* SKRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKRange.h; sourceTree = "<group>"; };
+		5F05F350186BFC9A004C7CF7 /* SKRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKRange.m; sourceTree = "<group>"; };
+		5F05F354186BFCB8004C7CF7 /* StreamKitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamKitTests.m; sourceTree = "<group>"; };
+		5F05F356186BFCD0004C7CF7 /* StreamKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +118,13 @@
 		5F05F327186BFC7F004C7CF7 /* StreamKit */ = {
 			isa = PBXGroup;
 			children = (
-				5F05F32A186BFC7F004C7CF7 /* StreamKit.h */,
-				5F05F32C186BFC7F004C7CF7 /* StreamKit.m */,
+				5F05F356186BFCD0004C7CF7 /* StreamKit.h */,
+				5F05F34B186BFC9A004C7CF7 /* NSObject+StreamKit.h */,
+				5F05F34C186BFC9A004C7CF7 /* NSObject+StreamKit.m */,
+				5F05F34D186BFC9A004C7CF7 /* SKGenerator.h */,
+				5F05F34E186BFC9A004C7CF7 /* SKGenerator.m */,
+				5F05F34F186BFC9A004C7CF7 /* SKRange.h */,
+				5F05F350186BFC9A004C7CF7 /* SKRange.m */,
 				5F05F328186BFC7F004C7CF7 /* Supporting Files */,
 			);
 			path = StreamKit;
@@ -128,7 +141,7 @@
 		5F05F33B186BFC7F004C7CF7 /* StreamKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				5F05F341186BFC7F004C7CF7 /* StreamKitTests.m */,
+				5F05F354186BFCB8004C7CF7 /* StreamKitTests.m */,
 				5F05F33C186BFC7F004C7CF7 /* Supporting Files */,
 			);
 			path = StreamKitTests;
@@ -224,7 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F05F32D186BFC7F004C7CF7 /* StreamKit.m in Sources */,
+				5F05F353186BFC9A004C7CF7 /* SKRange.m in Sources */,
+				5F05F351186BFC9A004C7CF7 /* NSObject+StreamKit.m in Sources */,
+				5F05F352186BFC9A004C7CF7 /* SKGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F05F342186BFC7F004C7CF7 /* StreamKitTests.m in Sources */,
+				5F05F357186BFCE9004C7CF7 /* NSObject+StreamKit.m in Sources */,
+				5F05F358186BFCEB004C7CF7 /* SKGenerator.m in Sources */,
+				5F05F355186BFCB8004C7CF7 /* StreamKitTests.m in Sources */,
+				5F05F359186BFCEE004C7CF7 /* SKRange.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

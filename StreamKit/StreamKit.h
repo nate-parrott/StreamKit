@@ -2,12 +2,15 @@
 //  StreamKit.h
 //  StreamKit
 //
-//  Created by Nate Parrott on 12/26/13.
+//  Created by Nate Parrott on 12/25/13.
 //  Copyright (c) 2013 Nate Parrott. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#ifndef StreamKit_StreamKit_h
+#define StreamKit_StreamKit_h
 
-@interface StreamKit : NSObject
+#import "SKGenerator.h"
+#import "NSObject+StreamKit.h"
+#import "SKRange.h"
 
-@end
+#endif
